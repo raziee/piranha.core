@@ -85,6 +85,10 @@ namespace RazorWeb
             System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
              */
 
+            var cultureInfo = new System.Globalization.CultureInfo("fa-IR");
+            System.Globalization.CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+            
             app.UsePiranha(options =>
             {
                 options.UseManager();
